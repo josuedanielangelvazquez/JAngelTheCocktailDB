@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB5D768B29B90A0D00ECAC79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D768A29B90A0D00ECAC79 /* AppDelegate.swift */; };
+		FB5D768D29B90A0D00ECAC79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D768C29B90A0D00ECAC79 /* SceneDelegate.swift */; };
+		FB5D768F29B90A0D00ECAC79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D768E29B90A0D00ECAC79 /* ViewController.swift */; };
+		FB5D769229B90A0D00ECAC79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5D769029B90A0D00ECAC79 /* Main.storyboard */; };
+		FB5D769529B90A0D00ECAC79 /* JAngelTheCocktailDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB5D769329B90A0D00ECAC79 /* JAngelTheCocktailDB.xcdatamodeld */; };
+		FB5D769729B90A0E00ECAC79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5D769629B90A0E00ECAC79 /* Assets.xcassets */; };
+		FB5D769A29B90A0E00ECAC79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5D769829B90A0E00ECAC79 /* LaunchScreen.storyboard */; };
+		FB5D76A629B90CF800ECAC79 /* CoctelesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D76A429B90CF800ECAC79 /* CoctelesCollectionViewCell.swift */; };
+		FB5D76A729B90CF800ECAC79 /* CoctelesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB5D76A529B90CF800ECAC79 /* CoctelesCollectionViewCell.xib */; };
+		FB5D76A929B90DCE00ECAC79 /* CocteleriaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D76A829B90DCE00ECAC79 /* CocteleriaModel.swift */; };
+		FB5D76AB29B9315200ECAC79 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D76AA29B9315200ECAC79 /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB5D768729B90A0D00ECAC79 /* JAngelTheCocktailDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAngelTheCocktailDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5D768A29B90A0D00ECAC79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB5D768C29B90A0D00ECAC79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FB5D768E29B90A0D00ECAC79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB5D769129B90A0D00ECAC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB5D769429B90A0D00ECAC79 /* JAngelTheCocktailDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JAngelTheCocktailDB.xcdatamodel; sourceTree = "<group>"; };
+		FB5D769629B90A0E00ECAC79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB5D769929B90A0E00ECAC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB5D769B29B90A0E00ECAC79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5D76A429B90CF800ECAC79 /* CoctelesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctelesCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB5D76A529B90CF800ECAC79 /* CoctelesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoctelesCollectionViewCell.xib; sourceTree = "<group>"; };
+		FB5D76A829B90DCE00ECAC79 /* CocteleriaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocteleriaModel.swift; sourceTree = "<group>"; };
+		FB5D76AA29B9315200ECAC79 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB5D768429B90A0D00ECAC79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB5D767E29B90A0D00ECAC79 = {
+			isa = PBXGroup;
+			children = (
+				FB5D768929B90A0D00ECAC79 /* JAngelTheCocktailDB */,
+				FB5D768829B90A0D00ECAC79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB5D768829B90A0D00ECAC79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D768729B90A0D00ECAC79 /* JAngelTheCocktailDB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB5D768929B90A0D00ECAC79 /* JAngelTheCocktailDB */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D76A329B90A2E00ECAC79 /* Controller */,
+				FB5D76A229B90A2100ECAC79 /* View */,
+				FB5D76A129B90A1500ECAC79 /* Model */,
+				FB5D768A29B90A0D00ECAC79 /* AppDelegate.swift */,
+				FB5D768C29B90A0D00ECAC79 /* SceneDelegate.swift */,
+				FB5D769629B90A0E00ECAC79 /* Assets.xcassets */,
+				FB5D769829B90A0E00ECAC79 /* LaunchScreen.storyboard */,
+				FB5D769B29B90A0E00ECAC79 /* Info.plist */,
+				FB5D769329B90A0D00ECAC79 /* JAngelTheCocktailDB.xcdatamodeld */,
+			);
+			path = JAngelTheCocktailDB;
+			sourceTree = "<group>";
+		};
+		FB5D76A129B90A1500ECAC79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D76A829B90DCE00ECAC79 /* CocteleriaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB5D76A229B90A2100ECAC79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D769029B90A0D00ECAC79 /* Main.storyboard */,
+				FB5D76A529B90CF800ECAC79 /* CoctelesCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB5D76A329B90A2E00ECAC79 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D768E29B90A0D00ECAC79 /* ViewController.swift */,
+				FB5D76A429B90CF800ECAC79 /* CoctelesCollectionViewCell.swift */,
+				FB5D76AA29B9315200ECAC79 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB5D768629B90A0D00ECAC79 /* JAngelTheCocktailDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB5D769E29B90A0E00ECAC79 /* Build configuration list for PBXNativeTarget "JAngelTheCocktailDB" */;
+			buildPhases = (
+				FB5D768329B90A0D00ECAC79 /* Sources */,
+				FB5D768429B90A0D00ECAC79 /* Frameworks */,
+				FB5D768529B90A0D00ECAC79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JAngelTheCocktailDB;
+			productName = JAngelTheCocktailDB;
+			productReference = FB5D768729B90A0D00ECAC79 /* JAngelTheCocktailDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB5D767F29B90A0D00ECAC79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					FB5D768629B90A0D00ECAC79 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = FB5D768229B90A0D00ECAC79 /* Build configuration list for PBXProject "JAngelTheCocktailDB" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB5D767E29B90A0D00ECAC79;
+			productRefGroup = FB5D768829B90A0D00ECAC79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB5D768629B90A0D00ECAC79 /* JAngelTheCocktailDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB5D768529B90A0D00ECAC79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5D76A729B90CF800ECAC79 /* CoctelesCollectionViewCell.xib in Resources */,
+				FB5D769A29B90A0E00ECAC79 /* LaunchScreen.storyboard in Resources */,
+				FB5D769729B90A0E00ECAC79 /* Assets.xcassets in Resources */,
+				FB5D769229B90A0D00ECAC79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB5D768329B90A0D00ECAC79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5D769529B90A0D00ECAC79 /* JAngelTheCocktailDB.xcdatamodeld in Sources */,
+				FB5D76A629B90CF800ECAC79 /* CoctelesCollectionViewCell.swift in Sources */,
+				FB5D768F29B90A0D00ECAC79 /* ViewController.swift in Sources */,
+				FB5D768B29B90A0D00ECAC79 /* AppDelegate.swift in Sources */,
+				FB5D76A929B90DCE00ECAC79 /* CocteleriaModel.swift in Sources */,
+				FB5D768D29B90A0D00ECAC79 /* SceneDelegate.swift in Sources */,
+				FB5D76AB29B9315200ECAC79 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB5D769029B90A0D00ECAC79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB5D769129B90A0D00ECAC79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB5D769829B90A0E00ECAC79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB5D769929B90A0E00ECAC79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB5D769C29B90A0E00ECAC79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB5D769D29B90A0E00ECAC79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB5D769F29B90A0E00ECAC79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JAngelTheCocktailDB/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis.JAngelTheCocktailDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB5D76A029B90A0E00ECAC79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JAngelTheCocktailDB/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis.JAngelTheCocktailDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB5D768229B90A0D00ECAC79 /* Build configuration list for PBXProject "JAngelTheCocktailDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5D769C29B90A0E00ECAC79 /* Debug */,
+				FB5D769D29B90A0E00ECAC79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB5D769E29B90A0E00ECAC79 /* Build configuration list for PBXNativeTarget "JAngelTheCocktailDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5D769F29B90A0E00ECAC79 /* Debug */,
+				FB5D76A029B90A0E00ECAC79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB5D769329B90A0D00ECAC79 /* JAngelTheCocktailDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB5D769429B90A0D00ECAC79 /* JAngelTheCocktailDB.xcdatamodel */,
+			);
+			currentVersion = FB5D769429B90A0D00ECAC79 /* JAngelTheCocktailDB.xcdatamodel */;
+			path = JAngelTheCocktailDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FB5D767F29B90A0D00ECAC79 /* Project object */;
+}
