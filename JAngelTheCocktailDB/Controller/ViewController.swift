@@ -27,7 +27,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cocteleria.getbyname(name: text) { Objectdrinks in
             DispatchQueue.main.async {
                 if Objectdrinks?.drinks == nil{
-                    print("No hay bebeidas relacionadas")
+                    let alert = UIAlertController(title: "Error", message: "No hay bebidas relacionadas", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default))
+                    self.present(alert, animated: false)
                 }
                 else{
                     self.coctelesdrinks = Objectdrinks!.drinks as! [drinks]
@@ -36,6 +38,24 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                     self.searchtext.text = ""
                 }
                   
+            }
+        }
+    }
+    
+    func loadDataByletter(text : String){
+        cocteleria.getbyletter(name: text) { ObjectsDrinks in
+            DispatchQueue.main.async {
+                if ObjectsDrinks.drinks == nil{
+                    let alert = UIAlertController(title: "Error", message: "No hay bebidas relacionadas", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default))
+                    self.present(alert, animated: false)
+                }
+                else{
+                    self.coctelesdrinks = ObjectsDrinks.drinks as! [drinks]
+                    self.CoctelesCollectionView.reloadData()
+                    self.searchtext.backgroundColor = .white
+                    self.searchtext.text = ""
+                }
             }
         }
     }
@@ -79,12 +99,19 @@ print(coctelesdrinks[indexPath.row].strDrinkThumb)
     
     
     @IBAction func SearchAction(_ sender: Any) {
+        let textsearhc = searchtext.text
         guard searchtext.text != ""	 else{
             searchtext.backgroundColor = .red
             searchtext.placeholder = "Ingrese una bebida"
             return
         }
-        loadData(text: searchtext.text!)
+        if textsearhc!.count == 1{
+            loadDataByletter(text: searchtext.text!)
+        }
+        if textsearhc!.count > 1{
+            loadData(text: searchtext.text!)
+            
+        }
       
     }
 }

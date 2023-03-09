@@ -13,9 +13,9 @@ struct CoctelsDrinks : Codable{
     let drinks : [drinks]?
 }
 struct drinks : Codable{
-    let idDrink: String
-    let strDrink: String
-    let strDrinkThumb: String
+    var idDrink: String
+    var strDrink: String
+    var strDrinkThumb: String
     let strIngredient1: String?
     let strIngredient2: String?
     let strIngredient3: String?

@@ -18,6 +18,8 @@
 		FB5D76A729B90CF800ECAC79 /* CoctelesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB5D76A529B90CF800ECAC79 /* CoctelesCollectionViewCell.xib */; };
 		FB5D76A929B90DCE00ECAC79 /* CocteleriaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D76A829B90DCE00ECAC79 /* CocteleriaModel.swift */; };
 		FB5D76AB29B9315200ECAC79 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D76AA29B9315200ECAC79 /* DetailViewController.swift */; };
+		FB5D76AD29B96D3600ECAC79 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D76AC29B96D3600ECAC79 /* DB.swift */; };
+		FB5D76AF29B97FCB00ECAC79 /* FavCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D76AE29B97FCB00ECAC79 /* FavCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		FB5D76A529B90CF800ECAC79 /* CoctelesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoctelesCollectionViewCell.xib; sourceTree = "<group>"; };
 		FB5D76A829B90DCE00ECAC79 /* CocteleriaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocteleriaModel.swift; sourceTree = "<group>"; };
 		FB5D76AA29B9315200ECAC79 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FB5D76AC29B96D3600ECAC79 /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		FB5D76AE29B97FCB00ECAC79 /* FavCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				FB5D76A829B90DCE00ECAC79 /* CocteleriaModel.swift */,
+				FB5D76AC29B96D3600ECAC79 /* DB.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				FB5D768E29B90A0D00ECAC79 /* ViewController.swift */,
 				FB5D76A429B90CF800ECAC79 /* CoctelesCollectionViewCell.swift */,
 				FB5D76AA29B9315200ECAC79 /* DetailViewController.swift */,
+				FB5D76AE29B97FCB00ECAC79 /* FavCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,10 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB5D769529B90A0D00ECAC79 /* JAngelTheCocktailDB.xcdatamodeld in Sources */,
+				FB5D76AD29B96D3600ECAC79 /* DB.swift in Sources */,
 				FB5D76A629B90CF800ECAC79 /* CoctelesCollectionViewCell.swift in Sources */,
 				FB5D768F29B90A0D00ECAC79 /* ViewController.swift in Sources */,
 				FB5D768B29B90A0D00ECAC79 /* AppDelegate.swift in Sources */,
 				FB5D76A929B90DCE00ECAC79 /* CocteleriaModel.swift in Sources */,
+				FB5D76AF29B97FCB00ECAC79 /* FavCollectionViewController.swift in Sources */,
 				FB5D768D29B90A0D00ECAC79 /* SceneDelegate.swift in Sources */,
 				FB5D76AB29B9315200ECAC79 /* DetailViewController.swift in Sources */,
 			);
