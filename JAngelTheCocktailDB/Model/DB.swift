@@ -88,8 +88,39 @@ class CoctelFav{
         return OBjectDrinks
 
     }
+    func delete(IdDrink : String) -> Bool{
+        var eliminado = false
+        let context = DB.init()
+        let query = "DELETE FROM Favoritos WHERE(idcoctelfavorito = \(IdDrink))"
+        var statement : OpaquePointer? = nil
+        do{
+            if try sqlite3_prepare_v2(context.db, query, -1, &statement, nil) == SQLITE_OK{
+                (
+                    
+                    print("Eliminado")
+                )
+                
+                if sqlite3_step(statement) == SQLITE_DONE{
+                    eliminado = true
+                    print("Correcto")
+                    
+                }
+                else{
+                    eliminado = false
+                    print("Error ")
+                }
+            }
+            
+        }
+        catch let error{
+           print("Error al eliminar")
+            print(error.localizedDescription)
+        }
+        return eliminado
+    }
+    }
 
-}
+
     
     
     

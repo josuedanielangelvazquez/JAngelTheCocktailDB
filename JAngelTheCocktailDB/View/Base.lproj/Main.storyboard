@@ -206,10 +206,13 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Favoritos" id="Gtp-pz-twA"/>
+                    <connections>
+                        <segue destination="DOz-ex-mXo" kind="show" identifier="seguesdetailpersistence" id="wKF-bF-mHA"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dT5-Ew-xar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093.8461538461538" y="-682.46445497630327"/>
+            <point key="canvasLocation" x="1686" y="-653"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OwP-Fd-VdN">
@@ -280,6 +283,9 @@
             <point key="canvasLocation" x="164.61538461538461" y="-682.46445497630327"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wKF-bF-mHA"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>

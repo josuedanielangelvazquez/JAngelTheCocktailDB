@@ -10,6 +10,8 @@ import UIKit
 private let reuseIdentifier = "Cell"
 var coctelsfavs = [drinks]()
 let favcoctels = CoctelFav()
+var idDrink = ""
+
 class FavCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
@@ -30,6 +32,19 @@ class FavCollectionViewController: UICollectionViewController {
        coctelsfavs = favcoctels.Getall() as! [drinks]
         collectionView.reloadData()
         
+    }
+    func seugesDetail(){
+        
+    }
+    func deletedata(idDrink : String){
+        if favcoctels.delete(IdDrink: idDrink) == true{
+            viewWillAppear(true)
+        }
+        else{
+            let alert = UIAlertController(title: "Error", message: "Ocurrio un Error, intentalo mas tarde", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default))
+            present(alert, animated: true)
+        }
     }
 
     /*
@@ -76,6 +91,30 @@ class FavCollectionViewController: UICollectionViewController {
         return cell
     }
 
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let alert = UIAlertController(title: "¿Que deseas hacer?", message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Detalles", style: .default){action in
+            idDrink = coctelsfavs[indexPath.row].idDrink
+            self.performSegue(withIdentifier: "seguesdetailpersistence", sender: nil)
+            
+        })
+        alert.addAction(UIAlertAction(title: "Eliminar", style: .destructive){
+            action in
+            self.deletedata(idDrink: coctelsfavs[indexPath.row].idDrink)
+        })
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel))
+        
+        present(alert, animated: true)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "seguesdetailpersistence"{
+            let detail = segue.destination as! DetailViewController
+            detail.idDrink = idDrink
+        }
+    }
     // MARK: UICollectionViewDelegate
 
     /*
